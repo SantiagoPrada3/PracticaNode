@@ -1,0 +1,24 @@
+Instalación de MySQL:
+bash
+
+sudo apt update && sudo apt upgrade -y
+sudo apt install mysql-server -y
+sudo mysql -u root -p
+Instalación de NVM (Node Version Manager) y Node.js LTS:
+bash
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+source ~/.nvm/nvm.sh
+nvm install --lts
+Clonar repositorio y configuración:
+
+git clone https://github.com/eocares/enviar-formulario-a-Mysql-con-Nodejs.git
+cd enviar-formulario-a-Mysql-con-Nodejs/
+npm install express
+Editar archivos:
+Usa nano u otro editor de texto para modificar archivos como server.js, configBD.js, y form.ejs.
+
+Ejecutar la aplicación:
+bash
+Copy code
+node server.js
